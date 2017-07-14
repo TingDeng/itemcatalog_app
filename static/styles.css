@@ -1,0 +1,273 @@
+@media only screen and (max-width : 320px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width : 320px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width : 768px) {
+  h1 {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    font-size: 5.6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+* {
+	font-family:'Indie Flower', cursive;
+	font-weight: 700;
+}
+h1 {
+	text-transform:uppercase;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	color: #FFFFFF;
+	line-height: 60px;
+	font-weight: 500;
+}
+
+
+h2 {
+	font-size: 3.2rem;
+	color: #FFFFFF;
+	line-height: 29px;
+	font-family: 'Indie Flower', cursive;
+	font-weight:500;
+	text-transform:uppercase;
+	text-shadow: 2px 2px #c3e4f4;
+}
+
+h3 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2.8rem;
+}
+h3:hover{
+    text-decoration:none;
+}
+ p {
+ 	font-size: 2.2rem;
+ 	line-height: 24px;
+ 	font-weight: 400;
+ }
+
+ strong {
+ 	font-size: 2rem;
+	color:#FFFFFF;
+ 	font-family:'Indie Flower', cursive;;
+ 	line-height: 24px;
+	text-transform:capitalize;
+ }
+
+ 
+.padding-top {
+	padding-top: 30px;
+}
+.padding-bottom {
+	padding-bottom: 30px;
+}
+.margin-right {
+	margin-right: 30px;
+}
+.padding-none {
+	padding: 0;
+}
+.btn {
+	padding: 10px 30px;
+	margin: 0;
+	color: #FFFFFF;
+	background-color:rgba(19, 20, 22,0.8);
+	border-style:none;
+	border-radius: 1em;
+	font-size:2rem;
+}
+.btn:hover {
+	border-color: #9FB80A;
+}
+.btn.delete {
+	border-color: #aaaaaa;
+	color: #aaaaaa;
+}
+.btn.delete:hover {
+	border-color: #aaaaaa;
+	color: red;
+}
+.glyphicon {
+	margin-right: 10px;
+}
+.top-trip {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.top-trip p {
+	margin-bottom: 0;
+	line-height: 16px;
+}
+.top-trip a {
+	margin-bottom: 0;
+	line-height: 16px;
+	font-size: 2.8rem;
+	color:#FFFFFF;
+	font-weight: 500;	
+	font-family:'Indie Flower', cursive;
+}
+.top-trip a:hover {
+	text-decoration:none;
+    color:#35383F;	
+}
+.trip-info a{
+	font-size:2.2rem;
+	text-decoration:none;
+}
+label{
+	font-size:2.2rem;
+}
+.form-control{
+	font-size:2.2rem;
+}
+.trip-info a:hover{
+	font-size:2.2rem;
+}
+
+body{
+	background: url("/static/florida.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.banner.trip {
+	padding-left:20px;
+	background-color: rgba(19, 20, 22,0.5);
+    border-radius:1em;
+}
+.banner.profile {
+	height: 150px;
+	background-color: #A6E8EB;
+}
+.banner h1 {
+	margin: 45px 0;
+}
+.city-list:hover{
+	 color:#FFFFFF;
+ }
+ 
+ .city-list {
+	border-bottom-left-radius: 2em;
+	border-top-right-radius: 2em;
+	margin-top:5px;
+	margin-bottom:5px;
+ 	background-color: rgba(19, 20, 22,0.5);
+ 	padding: 20px;
+	color:#c3e4f4;
+	text-transform:uppercase;
+	transform: skewX(10deg);
+    -moz-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+ }
+ 
+.trip-info {
+	background-color: rgba(19, 20, 22,0.8);
+	padding: 20px;
+}
+.trip-info p,.trip-info h3 {
+	color:#c3e4f4;
+	font-family:'Indie Flower', cursive;
+}
+
+.trip-price {
+	font-weight: 700;
+}
+.creator {
+	padding-right: 20px;
+	margin-top: -20px;
+	text-align: right;
+	float:right;
+}
+.creator img {
+	width: 100px;
+	border-radius: 50%;
+}
+.creator figcaption {
+	font-size: 2rem;
+	color: #FFFFFF;
+	font-weight: 400;
+	margin-top: -20px;
+	font-family:'Indie Flower', cursive;
+	text-transform:capitalize;
+	
+}
+.flash{
+	background-color:rgba(249, 251, 252,0.4);
+	border-radius:2em;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	padding-top:10px;
+	padding-bottom:10px;
+	list-style-type: none;
+	text-align: center;
+
+}
+.log{
+width:100%;
+position: absolute;
+top: 20%;
+background-color: rgba(19, 20, 22,0.5);
+padding-top:50px;
+padding-bottom:50px;
+margin-bottom:60px;
+}
+
+.log p{
+	color:#FFFFFF;
+	margin-bottom:20px;
+}
+#result{
+	color:#FFFFFF;
+	font-size:2rem;
+}

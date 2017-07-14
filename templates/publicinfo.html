@@ -1,0 +1,83 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	
+	<div class="row banner trip">
+		<div class="col-md-12">
+			<h1>{{ city.name }}
+			<figure class="creator">
+				<img src="{{ creator.picture}}">
+				<figcaption>{{ creator.name }}</figcaption>
+			</figure>
+			</h1>
+
+		</div>
+	</div>
+	<div class="row padding-top padding-bottom">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}
+					<ul>
+						{% for message in messages %}
+							 <li> <strong> {{ message }} </strong> </li>
+						{% endfor %}
+					</ul>
+				{% endif %}
+			{% endwith %}
+		</div>
+	</div>
+	{% if trips !=[] %}	
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Restaurants</h2>
+					{% for t in trips %}
+						{% if t.info == 'Restaurants' %}
+							<div class="trip-info">
+								<h3>{{t.name}}</h3>
+								<p>"{{t.description}}"</p>
+								<p class="trip-price">Approximate Cost : {{t.price}}</p>
+								
+							</div>
+						{% endif %}
+					{% endfor %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">			
+				<h2>Hotels</h2>
+					{% for t in trips %}
+						{% if t.info == 'Hotels' %}
+						<div class="trip-info">
+							<h3>{{t.name}}</h3>
+							<p>"{{t.description}}"</p>
+							<p class="trip-price">Approximate Cost : {{t.price}}</p>						
+						</div>
+						{% endif %}
+					{% endfor %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Things to do</h2>
+					{% for t in trips %}
+						{% if t.info == 'Things to do' %}
+						<div class="trip-info">
+							<h3>{{t.name}}</h3>
+							<p>"{{t.description}}"</p>
+							<p class="trip-price">Approximate Cost : {{t.price}}</p>
+							
+						</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+		</div>	
+				
+	{% endif %}
+	<div class="row padding-top padding-bottom">
+		<div class="col-md-12 padding-top padding-bottom"></div>
+	</div>
+	
+{% endblock %}
