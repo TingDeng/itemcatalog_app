@@ -420,7 +420,7 @@ def deleteTripInfo(city_id, trip_id):
         flash('Trip Info is Successfully Deleted')
         return redirect(url_for('showInfo', city_id=city_id))
     else:
-        return render_template('deleteTripInfo.html', trip=tripToDelete)
+        return render_template('deletetripinfo.html', trip=tripToDelete)
 
 
 # Disconnect based on provider
